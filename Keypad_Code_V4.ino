@@ -2,8 +2,8 @@
 // Completed 9/27/22
 // Written for Arduino Pro Micro/Arduino Leonardo boards
 // Intended for use with 17 buttons and a switch, all connected to the arduino via chained shift registers
-// Uses 1 RGB LED (common positive) for status indication at runtime
-// More information can be found at: 
+// Uses 1 RGB LED (common negative) for status indication at runtime
+// More information can be found at: https://github.com/jordankooyman/Diacritic_Keypad
 
 // Only 1 sample output is provided using demo numbers, all the output cases (starting at line 180)
 //   will need to be written manually once key layout is determined
