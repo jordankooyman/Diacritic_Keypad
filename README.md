@@ -56,3 +56,7 @@ Here is a video of me wiring my keypad together, uncut but running at 2x speed: 
 
 Due to the variability of wiring and desired character outputs, the code included is incomplete and all character combinations must be written in manually.
 If you have any questions regarding how to modify the code or wire things together, feel free to reach out to me at jordankooyman@gmail.com
+
+This keypad, as currently designed, will always still appear as an arduino device when connected to a computer. To change how it appears, but not restrict reprogrammability at all, the VID and PID values can be modified for the profile being uploaded to the board. To restrict reprogramming, some COM ports related to the attatched can be disabled in Windows, but it is local to each PC. To better restrict programming, an external ISP such as a usbTinyISP can be used to upload a the code and overwrite the bootloader of the Arduino Pro Micro. Note that overwriting the bootloader means that the ISP must be used to upload code to the board again in the future, until a bootloader is reloaded. Traditional methods of disabling sketch uploading to arduino boards do not work for the Atmega32u4 since it has built-in usb support rather than using an external chip, however this may be different if you are using a different microprocessor. For more information, please do your own research for the specific board you are using.
+
+I am not responsible for any faults, security holes, or other problems for any keypads you make, make at your own risk.
